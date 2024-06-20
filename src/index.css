@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.left{
+    height: 100vh; 
+    width:  27%;
+}
+.right {
+    height: 100vh; 
+    width:  70%;
+}
+.user{
+    width: 100%;
+    height: 90%;
+    
+}
+.innerchat{
+    height: 75%;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.input{
+    height: 15%;
+}
