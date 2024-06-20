@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 function App() {
-  
+
   const [users, setUsers] = useState([]);
   const [filteredUsers, setFilteredUsers] = useState([]);
   const [chat, setChat] = useState({});
@@ -72,20 +72,20 @@ function App() {
             {filteredUsers.length > 0 ? (
               filteredUsers.map((data) => (
                 <div
-                  className="comp h-24 w-96 ml-4 mb-4 bg-slate-400 rounded-xl flex justify-around items-center cursor-pointer"
+                  className="comp h-24 w-80 ml-4 mb-4 bg-slate-400 rounded-xl flex justify-around items-center cursor-pointer"
                   key={data.id}
                   id={data.id}
                   onClick={selectChat}
                 >
                   <div
-                    className="h-20 w-20 text-4xl font-bold border-2 border-yellow-200 flex justify-center items-center rounded-full"
+                    className="h-20 w-20 ml-2 text-4xl font-bold border-2 border-yellow-200 flex justify-center items-center rounded-full"
                     id={data.id}
                     onClick={selectChat}
                   >
                     {data.name.charAt(0)}
                   </div>
                   <div
-                    className="h-20 w-64 flex flex-col mb-2 ml-2 justify-center"
+                    className="h-20 w-60 flex flex-col mb-2 ml-2 justify-center"
                     id={data.id}
                     onClick={selectChat}
                   >
